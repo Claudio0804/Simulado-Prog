@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+    /*Faça um programa que pergunte ao usuário qual a cotação do euro. Pergunte também quantos euros serão necessários para realizar a viagem.
+Calcule o custo da viagem em R$ (reais) e apresente o resultado ao fim do programa.*/
+
+// Entrada
+
+const cotacaoEuro = Number(prompt ("Qual a contação atual do euro?").replace(",","."));
+const euroNecessario = Number(prompt ("Quantos euros serão necessários para realizar a viagem?").replace(",","."));
+
+// Processamento
+
+const valorViagem = Number(cotacaoEuro) * Number(euroNecessario);
+
+// Saída
+
+alert (`O custo da viagem será de ${valorViagem.toFixed(2).replace(".",",")} real(is).`);
+
+</script>
